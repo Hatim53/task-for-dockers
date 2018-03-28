@@ -1,4 +1,6 @@
 ---
 - hosts: all
+  sudo:  yes
   tasks:
-      - shell: echo "script"
+      - name: Creating Docker Images, launching containers
+        shell: sh ./script.sh
